@@ -1,3 +1,6 @@
+`include "task1/rom.sv"
+`include "task1/counter.sv"
+
 module sinegen # (parameter WIDTH=8)(
     input wire      clk,
     input wire      rst,
@@ -16,7 +19,8 @@ counter myCounter (
 
 rom myRom (
     .clk (clk),
-    .addr (count)
+    .addr (count),
+    .dout (dout)
 );
 
 endmodule
