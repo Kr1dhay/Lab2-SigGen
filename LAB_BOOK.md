@@ -1,6 +1,6 @@
 # Lab 2 Logbook
 
-### Task 1 - Simple sinewave generator
+## Task 1 - Simple sinewave generator
 
 
 **Step 1 - Specifying a 256 x 8 bit ROM**
