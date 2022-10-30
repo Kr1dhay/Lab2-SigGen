@@ -1,7 +1,8 @@
 # Lab 2 Logbook
 
+---
 ## Task 1 - Simple sinewave generator
-
+---
 
 **Step 1 - Specifying a 256 x 8 bit ROM**
 
@@ -29,3 +30,19 @@ I created the toplevel module and instantiated instances of the counter and rom 
 **Step 3 - Create the testbench for sinegen**
 
 Based on what you learned from Lab 1, try to write the testbench **_sinegen_tb.cpp_** on your own. You should initially set incr[7:0] to 1.  Then use the **_vbdPlot()_** function to plot output data sample to Vbuddy.
+
+I tried to modify last weeks testbench in order to create this weeks one but I struggled so I used the appendix to assist me in this.  However, I am now a bit more confident with understanding the testbench
+
+<p align="center"> <img src="images/SWave.jpeg" /> </p>
+
+I was able to get the sinewave to correctly display on the VBuddy and also the early break using the Q key on the keyboard worked as expected.
+
+I then tried to adjust the frequency using the rotary control on VBuddy.  This worked but my method of increasing the count made the display not look continuous.
+
+<p align="center"> <img src="images/frequency.jpeg" /> </p>
+
+
+
+---
+## Task 2 - Sine and Cosine Dual wave generation 
+---
