@@ -46,3 +46,18 @@ I then tried to adjust the frequency using the rotary control on VBuddy.  This w
 ---
 ## Task 2 - Sine and Cosine Dual wave generation 
 ---
+
+I firstly modified the counter to remove the increment feature as it was not needed at this stage.  I then created the dual input ROM which takes two inputs:  The input from the counter as well as the offset input.  It uses these two inputs to output two values at rom.
+
+The next step was to modify the testbench to read the offset value as the vbdValue.
+
+While testing, I found that everything worked as expected and an image can be seen below.
+
+<p align="center"> <img src="images/dualWave.jpeg" /> </p>
+
+
+---
+## Task 3 - Capture and display audio signal in RAM
+---
+
+The goal of Task 3 is to capture real audio signal using the microphone/amplifier module on Vbuddy.  These samples are written to a dual-port RAM stored in successive locations.  At the same time, read back from  the RAM the store signal at a different address offset from the write address.  In this way, the retrieved signal is a delayed version of the original signal.
