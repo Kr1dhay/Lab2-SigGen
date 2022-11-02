@@ -28,7 +28,7 @@ ramTwoPorts myRAM(
     .offset (offset),
     .din (din),
     .dout (dout)
-)
+);
 
 
 endmodule

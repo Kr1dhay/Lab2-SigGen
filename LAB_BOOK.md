@@ -61,3 +61,7 @@ While testing, I found that everything worked as expected and an image can be se
 ---
 
 The goal of Task 3 is to capture real audio signal using the microphone/amplifier module on Vbuddy.  These samples are written to a dual-port RAM stored in successive locations.  At the same time, read back from  the RAM the store signal at a different address offset from the write address.  In this way, the retrieved signal is a delayed version of the original signal.
+
+<p align="center"> <img src="images/delayAudio.jpeg" /> </p>
+
+I first created the two submodules: The counter and the two port RAM.  After creating the top level module and adapting the testbench, my system worked as expected.
